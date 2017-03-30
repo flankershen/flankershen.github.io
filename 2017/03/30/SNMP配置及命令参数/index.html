@@ -15,7 +15,7 @@
 <meta property="og:description" content="1、SNMP命令包括：1234567snmp-server communitysnmp-server contactsnmp-server enable trapssnmp-server hostsnmp-server locationsnmp-server trap-authentication snmpv1show snmp
 
 2、snmp-server community​    2.1、设">
-<meta property="og:updated_time" content="2017-03-30T06:11:05.000Z">
+<meta property="og:updated_time" content="2017-03-30T06:13:46.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="SNMP配置及命令参数">
 <meta name="twitter:description" content="1、SNMP命令包括：1234567snmp-server communitysnmp-server contactsnmp-server enable trapssnmp-server hostsnmp-server locationsnmp-server trap-authentication snmpv1show snmp
@@ -180,8 +180,7 @@
 <p>​    <strong>2.2、参数说明：</strong><br>community-name为团体名，类型为字符串。<br>ro和rw表示该团体的访问权限有只读（read-only）和读写（read-write）两种。</p>
 <p>​    <strong>2.3、缺省情况</strong><br>系统缺省认为具有只读权限的团体名为public，具有读写权限的团体名为private。<br>​    <strong>2.4、命令模式</strong><br>全局配置模式<br>​    <strong>2.5、使用指南</strong><br>SNMP v1 采用团体名认证方案，与设备认可的团体名不符的 SNMP 报文将被丢弃。不同的团体可具有只读（read-only）或读写（read-write）两种访问权限。具有只读权限的团体只能对设备信息进行查询，而具有读写权限的团体还可以对设备进行配置。<br>​    <strong>2.6、举例</strong><br>设置public团体具有只读权限，private团体具有读写权限<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">Quidway(config)#snmp-server community ro public</div><div class="line">Quidway(config)#snmp-server community rw private</div></pre></td></tr></table></figure></p>
 <hr>
-<p>###3、 snmp-server contact</p>
-<p>设置网络管理人员的标识及联系方法<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">snmp-server contact sysContact</div></pre></td></tr></table></figure></p>
+<h3 id="3、-snmp-server-contact"><a href="#3、-snmp-server-contact" class="headerlink" title="3、 snmp-server contact"></a>3、 snmp-server contact</h3><p>设置网络管理人员的标识及联系方法<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">snmp-server contact sysContact</div></pre></td></tr></table></figure></p>
 <p>​    <strong>3.1、参数说明</strong><br>sysContact为一字符串，表示网络管理人员的标识和联系方法。<br>​    <strong>3.2、缺省情况</strong><br>系统缺省的sysContact为SysAdmin。<br>​    <strong>3.3、命令模式</strong><br>全局配置模式<br>​    <strong>3.4、使用指南</strong><br>当网络出现故障时，可以根据此信息与网络管理人员进行联系。<br>​    <strong>3.5、举例</strong><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">Quidway(config)#snmp-server contact sysadmin:XXX(Tel:1234)</div></pre></td></tr></table></figure></p>
 <hr>
 <h3 id="4、snmp-server-enable-traps"><a href="#4、snmp-server-enable-traps" class="headerlink" title="4、snmp-server enable traps"></a>4、snmp-server enable traps</h3><p>禁止或允许系统发送Trap。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">[ no ] snmp-server enable traps</div></pre></td></tr></table></figure></p>
@@ -200,7 +199,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://super-flanker.com/2017/03/30/SNMP配置及命令参数/" data-id="cj0w05l1e0000g84itqwuf58d" class="article-share-link">Share</a>
+      <a data-url="http://super-flanker.com/2017/03/30/SNMP配置及命令参数/" data-id="cj0w08hqx0001a84iodn8t19i" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/SNMP/">SNMP</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/网络配置/">网络配置</a></li></ul>
