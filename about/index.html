@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   
-  <title>About</title>
+  <title>About | Connect();</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta property="og:type" content="website">
 <meta property="og:title" content="connect();">
@@ -153,8 +153,8 @@
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/03/30/ZTE交换路由设备配置的备份与恢复/">ZTE交换路由设备配置的备份与恢复</a>
+    <h1 class="article-title" itemprop="name">
+      About Connect();
     </h1>
   
 
@@ -162,76 +162,19 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="一、TFTP服务器搭建"><a href="#一、TFTP服务器搭建" class="headerlink" title="一、TFTP服务器搭建"></a>一、TFTP服务器搭建</h2><p><strong>使用用户计算机搭建TFTP服务器，交换路由设备作为TFTP客户端。</strong></p>
-<ul>
-<li>运行TFTPServer.exe，该程序所在的目录为TFTP的根目录。</li>
-<li>请保证您的TFTP可以Ping通所要执行后续任务的交换机的管理地址。</li>
-</ul>
-<p><strong>TFTPServer.exe所在的目录为：D:\Program Files\Cisco-TFTP-Server\Cisco TFTP Server 则TFTP的根目录为D:\Program Files\Cisco-TFTP-Server\Cisco TFTP Server。也可以更换根目录。</strong></p>
-<h2 id="二、配置文件的备份与恢复"><a href="#二、配置文件的备份与恢复" class="headerlink" title="二、配置文件的备份与恢复"></a>二、配置文件的备份与恢复</h2><p><strong>3200系列</strong></p>
-<ul>
-<li>配置文件备份</li>
-</ul>
-<p>使用 write 命令将配置信息保存到 startrun.dat 文件中后，执行如下命令将 FLASH 中的配置文件备份到连接到交换机业务接口的后台 TFTP 服务器：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">ZXR10#copy flash: /cfg/startrun.dat tftp: //168.1.1.1/startrun.dat</div><div class="line">//请将命令中的168.1.1.1更改为您的TFTP主机地址</div></pre></td></tr></table></figure>
-<ul>
-<li>配置文件恢复</li>
-</ul>
-<p>执行如下命令从连接到交换机业务接口的后台 TFTP 服务器恢复备份的配置文件：</p>
-  <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">ZXR10#copy tftp: //168.1.1.1/startrun.dat flash: /cfg/startrun.dat </div><div class="line">//请将命令中的168.1.1.1更改为您的TFTP主机地址</div></pre></td></tr></table></figure>
-<p>恢复配置后直接reload重启设备即可。</p>
-
+       <p>
+         嵌入式开发出身，走了很多弯路。
+         曾经的：
+         嵌入式开发工程师
+         VCP
+         OCP
+         RHCE
+         CCIE在路上
+       </p>
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://super-flanker.com/2017/03/30/ZTE交换路由设备配置的备份与恢复/" data-id="cj0vx94dn0000tw4i3qitoik4" class="article-share-link">Share</a>
-      
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/ZTE/">ZTE</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/网络配置/">网络配置</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2017/03/30/hello-world/" class="article-date">
-  <time datetime="2017-03-30T01:35:41.750Z" itemprop="datePublished">2017-03-30</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/03/30/hello-world/">Hello World</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://super-flanker.com/2017/03/30/hello-world/" data-id="cj0vx94dr0001tw4iw0az3byf" class="article-share-link">Share</a>
+      <a data-url="http://super-flanker.com/about/index.html/" data-id="cj0vx94dr0001tw4iw0az3byf" class="article-share-link">Share</a>
       
       
     </footer>
